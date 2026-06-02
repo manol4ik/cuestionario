@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario Inicial Entrenamiento Deportivo 2026</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; background-color: #f9f9f9; color: #333; line-height: 1.6; }
+        .container { max-width: 750px; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin: auto; }
+        h1 { color: #007bff; text-align: center; border-bottom: 3px solid #007bff; padding-bottom: 10px; font-size: 26px; }
+        h2 { color: #333; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; font-size: 20px; text-transform: uppercase; }
+        h3 { font-size: 16px; margin-bottom: 10px; color: #555; }
+        .section-desc { background: #eef5ff; padding: 15px; border-left: 5px solid #007bff; border-radius: 4px; margin-bottom: 30px; font-style: italic; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="text"], input[type="date"], input[type="number"], input[type="url"], textarea { 
+            width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; font-size: 14px; background: #fff;
+        }
+        textarea { resize: vertical; height: 80px; }
+        .row { display: flex; gap: 15px; }
+        .row .form-group { flex: 1; }
+        .checkbox-group, .radio-group { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 5px; }
+        .checkbox-item, .radio-item { display: flex; align-items: center; gap: 8px; background: #f1f1f1; padding: 8px 14px; border-radius: 20px; cursor: pointer; font-size: 14px; }
+        input[type="checkbox"], input[type="radio"] { transform: scale(1.2); cursor: pointer; }
+        .scale-container { display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; padding: 15px; border-radius: 8px; border: 1px solid #eee; }
+        .scale-item { display: flex; flex-direction: column; align-items: center; font-size: 12px; font-weight: bold; }
+        .scale-item input { margin-top: 5px; transform: scale(1.3); }
+        .footer { text-align: center; margin-top: 40px; font-size: 14px; font-weight: bold; color: #007bff; background: #eef5ff; padding: 15px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📋 Entrevista Inicial - Ecuadoruns</h1>
+    
+    <div class="section-desc">
+        El objetivo de esto es conocerte un poco mejor. Antes que deportista, eres una persona con una vida completa, y para mí es fundamental entender cómo encaja el deporte en ella. Cuanto más sepa de ti ahora (y a medida que avancemos), mejor podré adaptar los entrenamientos para que funcionen realmente para ti.[cite: 1]
+    </div>
+
+    <h2>👤 Información Básica</h2>
+    <div class="form-group"><label>Nombres y Apellidos:</label><input type="text"></div>
+    <div class="form-group"><label>Correo Electrónico:</label><input type="text"></div>
+    <div class="row">
+        <div class="form-group"><label>Edad y Fecha de Nacimiento:</label><input type="text"></div>
+        <div class="form-group"><label>Número de Teléfono:</label><input type="text"></div>
+    </div>
+    <div class="form-group"><label>Ciudad y Sector de Domicilio:</label><input type="text"></div>
+    <div class="row">
+        <div class="form-group"><label>Altura (cm):</label><input type="number"></div>
+        <div class="form-group"><label>Peso (kg y fecha última vez medido):</label><input type="text"></div>
+    </div>
+    <div class="form-group">
+        <label>Método preferido de comunicación:</label>
+        <div class="checkbox-group">
+            <label class="checkbox-item"><input type="checkbox"> Email</label>
+            <label class="checkbox-item"><input type="checkbox"> Llamada</label>
+            <label class="checkbox-item"><input type="checkbox"> WhatsApp</label>
+            <label class="checkbox-item"><input type="checkbox"> Otro</label>
+        </div>
+    </div>
+
+    <h2>🏃‍♂️ Historial Deportivo</h2>
+    <div class="form-group"><label>Resume tu historial deportivo brevemente:</label><textarea></textarea></div>
+    <div class="form-group">
+        <label>Califica tu nivel dentro de tu deporte principal:</label>
+        <div class="radio-group">
+            <label class="radio-item"><input type="radio" name="nivel"> Inicial</label>
+            <label class="radio-item"><input type="radio" name="nivel"> Medio</label>
+            <label class="radio-item"><input type="radio" name="nivel"> Avanzado</label>
+        </div>
+    </div>
+    <div class="form-group"><label>¿Has entrenado previamente con un entrenador deportivo? Indícanos cuánto tiempo y cómo te ha ido:</label><textarea></textarea></div>
+    <div class="form-group">
+        <label>¿Tienes cuenta de Training Peaks?</label>
+        <div class="radio-group">
+            <label class="radio-item"><input type="radio" name="tp"> Sí</label>
+            <label class="radio-item"><input type="radio" name="tp"> No</label>
+        </div>
+    </div>
+    <div class="form-group"><label>Tienes cuenta de Strava, compártenos el enlace a tu cuenta:</label><input type="url"></div>
+    <div class="form-group"><label>¿Cómo ha sido tu entrenamiento en los últimos 6 meses y cómo te has guiado?</label><textarea></textarea></div>
+    
+    <div class="form-group">
+        <label>¿Haces entrenamiento de fuerza?</label>
+        <div class="radio-group">
+            <label class="radio-item"><input type="radio" name="fuerza"> Nunca</label>
+            <label class="radio-item"><input type="radio" name="fuerza"> 1-2 veces por semana</label>
+            <label class="radio-item"><input type="radio" name="fuerza"> 3 o más veces por semana</label>
+        </div>
+    </div>
+    <div class="form-group"><label>En caso de que sí hagas fuerza, indícanos cómo es tu rutina habitual:</label><textarea></textarea></div>
+
+    <div class="form-group">
+        <label>Califica tu movilidad:</label>
+        <div class="scale-container">
+            <div class="scale-item">Mala<input type="radio" name="movilidad" value="1">1</div>
+            <div class="scale-item"><br><input type="radio" name="movilidad" value="2">2</div>
+            <div class="scale-item"><br><input type="radio" name="movilidad" value="3">3</div>
+            <div class="scale-item"><br><input type="radio" name="movilidad" value="4">4</div>
+            <div class="scale-item"><br><input type="radio" name="movilidad" value="5">5</div>
+            <div class="scale-item"><br><input type="radio" name="movilidad" value="6">6</div>
+            <div class="scale-item"><br><input type="radio" name="movilidad" value="7">7</div>
+            <div class="scale-item"><br><input type="radio" name="movilidad" value="8">8</div>
+            <div class="scale-item"><br><input type="radio" name="movilidad" value="9">9</div>
+            <div class="scale-item">Maestro Yoga<input type="radio" name="movilidad" value="10">10</div>
+        </div>
+    </div>
+
+    <div class="form-group"><label>¿En cuántas carreras participaste el año anterior?</label><input type="number"></div>
+    <div class="form-group"><label>¿Cuáles son tus fortalezas?</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Cuáles son tus debilidades?</label><textarea></textarea></div>
+
+    <h2>🏥 Salud y Consideraciones Médicas</h2>
+    <div class="form-group"><label>¿Has tenido lesiones? Indícanos las más relevantes y si ya están superadas o persisten:</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Acudes a fisioterapia? ¿Dónde?</label><input type="text"></div>
+    <div class="form-group"><label>¿Utilizas algún mecanismo de recuperación? (Ej: foam roller, botas de compresión, compex):</label><input type="text"></div>
+    <div class="form-group"><label>¿Te has realizado una prueba de esfuerzo y cuándo fue?</label><input type="text"></div>
+    <div class="form-group"><label>¿Te has realizado exámenes de sangre y cuándo fue?</label><input type="text"></div>
+    <div class="form-group"><label>¿Algún impedimento médico o consideración especial para tener en cuenta en el entrenamiento?</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Algún medicamento que tomes recurrentemente?</label><input type="text"></div>
+    <div class="form-group">
+        <label>Salud Mental (Confidencial):</label>
+        <p style="font-size: 13px; color: #666; margin-top: -5px;">¿Cuentas con algún diagnóstico o condición psicológica/psiquiátrica que deba conocer para adaptar mejor tu plan?</p>
+        <textarea></textarea>
+    </div>
+
+    <h2>🩸 Mujer y Ciclo Menstrual</h2>
+    <div class="form-group">
+        <label>¿Tienes ciclos de manera regular?</label>
+        <div class="radio-group">
+            <label class="radio-item"><input type="radio" name="ciclo"> Sí</label>
+            <label class="radio-item"><input type="radio" name="ciclo"> No</label>
+        </div>
+    </div>
+    <div class="form-group"><label>¿Cómo te sientes durante el ciclo menstrual? (Ej: cólicos, fuerte, falta de motivación):</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Alguna vez has perdido la regla durante meses consecutivos? ¿Cuándo y por cuánto tiempo?</label><textarea></textarea></div>
+    <div class="form-group">
+        <label>¿Has sincronizado tu ciclo menstrual con tu aplicación deportiva? (Garmin, Coros, etc.):</label>
+        <div class="radio-group">
+            <label class="radio-item"><input type="radio" name="sync"> Sí</label>
+            <label class="radio-item"><input type="radio" name="sync"> No</label>
+        </div>
+    </div>
+
+    <h2>💼 Estilo de Vida</h2>
+    <div class="row">
+        <div class="form-group"><label>¿Cuál es tu ocupación?</label><input type="text"></div>
+        <div class="form-group"><label>¿Cuántas horas a la semana trabajas?</label><input type="number"></div>
+    </div>
+    <div class="form-group">
+        <label>¿Qué tan estresante es tu trabajo?</label>
+        <div class="scale-container">
+            <div class="scale-item">No lo es<input type="radio" name="estres" value="1">1</div>
+            <div class="scale-item"><br><input type="radio" name="estres" value="2">2</div>
+            <div class="scale-item"><br><input type="radio" name="estres" value="3">3</div>
+            <div class="scale-item"><br><input type="radio" name="estres" value="4">4</div>
+            <div class="scale-item"><br><input type="radio" name="estres" value="5">5</div>
+            <div class="scale-item"><br><input type="radio" name="estres" value="6">6</div>
+            <div class="scale-item"><br><input type="radio" name="estres" value="7">7</div>
+            <div class="scale-item"><br><input type="radio" name="estres" value="8">8</div>
+            <div class="scale-item"><br><input type="radio" name="estres" value="9">9</div>
+            <div class="scale-item">Extremo<input type="radio" name="estres" value="10">10</div>
+        </div>
+    </div>
+    <div class="form-group"><label>¿Cuántas horas en promedio descansas por noche?</label><input type="number" step="0.5"></div>
+    <div class="form-group"><label>¿Acudes a algún nutricionista? Dinos con quién y si tomas algún suplemento:</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Qué tanto te apoya tu familia o círculo cercano con tus entrenamientos?</label><textarea></textarea></div>
+
+    <h2>🚴‍♂️ Entrenamiento y Disponibilidad</h2>
+    <div class="form-group"><label>¿Qué deporte practicas? (Detalla el principal y adicionales):</label><textarea></textarea></div>
+    <div class="row">
+        <div class="form-group"><label>Tiempo para entrenar entre semana:</label><input type="text"></div>
+        <div class="form-group"><label>Tiempo para entrenar fines de semana:</label><input type="text"></div>
+    </div>
+    <div class="row">
+        <div class="form-group"><label>Día preferido para largos:</label><input type="text"></div>
+        <div class="form-group"><label>Día preferido para descansar:</label><input type="text"></div>
+    </div>
+    
+    <div class="form-group">
+        <label>¿En qué tipo de lugares entrenas? (Puedes marcar varios):</label>
+        <div class="checkbox-group">
+            <label class="checkbox-item"><input type="checkbox"> Parque Urbano</label>
+            <label class="checkbox-item"><input type="checkbox"> Parque Natural / Senderos</label>
+            <label class="checkbox-item"><input type="checkbox"> Asfalto</label>
+            <label class="checkbox-item"><input type="checkbox"> Máquina de Correr</label>
+            <label class="checkbox-item"><input type="checkbox"> Pista Atlética</label>
+            <label class="checkbox-item"><input type="checkbox"> Montaña</label>
+            <label class="checkbox-item"><input type="checkbox"> Piscina</label>
+            <label class="checkbox-item"><input type="checkbox"> Bici estática / Rodillo</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>¿Tienes acceso a gimnasio o implementos en tu domicilio?</label>
+        <div class="radio-group">
+            <label class="radio-item"><input type="radio" name="gym"> Sí</label>
+            <label class="radio-item"><input type="radio" name="gym"> No</label>
+        </div>
+    </div>
+    <div class="form-group"><label>¿Cómo mides el esfuerzo en tu entrenamiento? (Percepción, pulsaciones, potencia):</label><input type="text"></div>
+    <div class="form-group"><label>¿Cuentas con reloj deportivo y medidor de frecuencia cardíaca? ¿Qué marca y modelo?</label><input type="text"></div>
+    <div class="form-group"><label>¿Usas algún otro gadget? (Potenciómetro, anillo inteligente, glucosa):</label><input type="text"></div>
+    <div class="form-group"><label>¿Con cuántos zapatos cuentas para correr? Modelos y rotación:</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Tienes algún tipo de bicicleta?</label><input type="text"></div>
+    <div class="form-group">
+        <label>¿Prefieres entrenar en grupo, solo o combinado?</label>
+        <div class="radio-group">
+            <label class="radio-item"><input type="radio" name="grupo"> Solo</label>
+            <label class="radio-item"><input type="radio" name="grupo"> En grupo</label>
+            <label class="radio-item"><input type="radio" name="grupo"> Combinado</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>¿Te gustaría acudir a las clases grupales de Ecuadoruns?</label>
+        <div class="radio-group">
+            <label class="radio-item"><input type="radio" name="clases"> Sí</label>
+            <label class="radio-item"><input type="radio" name="clases"> No</label>
+        </div>
+    </div>
+
+    <h2>🎯 Objetivos</h2>
+    <div class="form-group"><label>¿Cuál es tu 'PORQUÉ'? ¿Qué es lo que te mueve para entrenar?:</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Cuáles son tus objetivos de competencia para la temporada? (En orden de prioridad):</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Qué significa éxito en cada una de estas carreras?:</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Qué resultado haría que no estés satisfecho con tu desempeño?:</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Estás satisfecho/a con tus rendimientos pasados? ¿Por qué?:</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Qué es lo que más te limita actualmente? Enumera 3 factores (Ej: tiempo, constancia):</label><textarea></textarea></div>
+    
+    <div class="form-group">
+        <label>¿Qué tan importante es para ti lograr tu objetivo de temporada?</label>
+        <div class="scale-container">
+            <div class="scale-item">Poco importante<input type="radio" name="importancia" value="1">1</div>
+            <div class="scale-item"><br><input type="radio" name="importancia" value="2">2</div>
+            <div class="scale-item"><br><input type="radio" name="importancia" value="3">3</div>
+            <div class="scale-item"><br><input type="radio" name="importancia" value="4">4</div>
+            <div class="scale-item"><br><input type="radio" name="importancia" value="5">5</div>
+            <div class="scale-item"><br><input type="radio" name="importancia" value="6">6</div>
+            <div class="scale-item"><br><input type="radio" name="importancia" value="7">7</div>
+            <div class="scale-item"><br><input type="radio" name="importancia" value="8">8</div>
+            <div class="scale-item"><br><input type="radio" name="importancia" value="9">9</div>
+            <div class="scale-item">Lo máximo<input type="radio" name="importancia" value="10">10</div>
+        </div>
+    </div>
+
+    <div class="form-group"><label>¿Tienes otros objetivos además de los competitivos? (Ej: segmentos Strava, FKT):</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Cómo ajustas tus objetivos cuando enfrentas contratiempos? (Lesión, enfermedad):</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Cuál es tu sueño más loco a futuro?:</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Qué esperas de mí como tu coach?:</label><textarea></textarea></div>
+    <div class="form-group"><label>¿Algo adicional que quieras comentar?:</label><textarea></textarea></div>
+
+    <div class="footer">
+        🙌 ¡Gracias por tu tiempo y honestidad! Trabajemos juntos hacia tus objetivos.
+    </div>
+</div>
+
+</body>
+</html>
